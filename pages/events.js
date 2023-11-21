@@ -6,7 +6,6 @@ function EventsPage() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    // Assuming getEvents is a function to fetch events from an API
     getEvents().then((data) => setEvents(data));
   }, []);
 
