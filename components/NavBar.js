@@ -14,7 +14,7 @@ export default function NavBar() {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Link passHref href="/">
-          <Navbar.Brand>Level Up Gaming</Navbar.Brand>
+          <Navbar.Brand>LEVEL UP</Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -23,7 +23,10 @@ export default function NavBar() {
             <Link passHref href="/">
               <Nav.Link>Home</Nav.Link>
             </Link>
-            <Link passHref href="../events">
+            <Link passHref href="/games">
+              <Nav.Link>Games</Nav.Link>
+            </Link>
+            <Link passHref href="/events">
               <Nav.Link>Events</Nav.Link>
             </Link>
             <Button variant="danger" onClick={signOut}>
